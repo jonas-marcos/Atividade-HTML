@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prevenção</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.jpg" alt="Logo da Vigilância Ambiental" class="logo">
+            <h1>Como se Proteger da Dengue</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="situacao.html">Situação Atual</a></li>
+                    <li><a href="prevencao.html">Prevenção</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Adote essas Medidas Preventivas</h2>
+            <ul>
+                <li>Evite o acúmulo de água em recipientes</li>
+                <li>Use repelente regularmente</li>
+                <li>Realize a limpeza de calhas e ralos</li>
+                <li>Cuide do seu jardim e elimine possíveis focos</li>
+            </ul>
+            <h3>Avalie as Medidas Preventivas</h3>
+            <form action="enviar_avaliacao.php" method="post" class="evaluation-form">
+                <div class="form-group">
+                    <label for="avaliador">Seu Nome:</label>
+                    <input type="text" id="avaliador" name="avaliador" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Seu E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="medida">Qual medida você considera mais importante?</label>
+                    <select id="medida" name="medida" required>
+                        <option value="agua_parada">Evitar água parada</option>
+                        <option value="repelente">Uso de repelente</option>
+                        <option value="limpeza">Limpeza de calhas e ralos</option>
+                        <option value="jardim">Cuidados no jardim</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="avaliacao">Deixe sua opinião:</label>
+                    <textarea id="avaliacao" name="avaliacao" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar Avaliação</button>
+            </form>
+            <h3>Exemplos de Medidas Preventivas</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Medida</th>
+                        <th>Descrição</th>
+                        <th>Exemplo Prático</th>
+                        <th>Frequência</th>
+                        <th>Importância</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Evitar água parada</td>
+                        <td>Remova recipientes que acumulam água.</td>
+                        <td>Verificar vasos de plantas semanalmente.</td>
+                        <td>Semanal</td>
+                        <td>Alta</td>
+                    </tr>
+                    <tr>
+                        <td>Uso de repelente</td>
+                        <td>Aplique repelente regularmente.</td>
+                        <td>Reaplicar após nadar.</td>
+                        <td>Diária</td>
+                        <td>Média</td>
+                    </tr>
+                    <tr>
+                        <td>Limpeza de calhas</td>
+                        <td>Retire folhas acumuladas.</td>
+                        <td>Utilizar mangueira para lavar.</td>
+                        <td>Mensal</td>
+                        <td>Alta</td>
+                    </tr>
+                    <tr>
+                        <td>Armazenamento de água</td>
+                        <td>Feche os recipientes.</td>
+                        <td>Utilizar tampas herméticas.</td>
+                        <td>Semanal</td>
+                        <td>Alta</td>
+                    </tr>
+                    <tr>
+                        <td>Educação</td>
+                        <td>Informar vizinhos sobre prevenção.</td>
+                        <td>Campanhas comunitárias.</td>
+                        <td>Semestral</td>
+                        <td>Média</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; 2024 Portal da Vigilância Ambiental. Todos os direitos reservados.</p>
+            <div class="footer-info">
+                <p><strong>Contato:</strong> (12) 3456-7890 | contato@municipio.com.br</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/jonasmarcos.diasrocha.5?locale=pt_BR" target="_blank">Facebook</a> |
+                    <a href="https://www.instagram.com/jonas_marcos_dr/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
